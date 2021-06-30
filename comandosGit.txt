@@ -13,3 +13,16 @@ git remote add origin https://github.com/curtytech/needleOffice.git
 
 //push para upar
 git push -u origin master
+
+
+//Branches
+// Saber qual branch esta
+git branch 
+
+// Add nova branch
+git branch nomedabranch
+
+//Mudar de Branch
+git checkout branch
+
+

@@ -66,7 +66,7 @@
 
             <div class="col-md-3">
                 <label class="form-label">Valor Total de Serviços:</label>
-                <input type="text" class="form-control" id="valTotalServico" name="valTotalServico" value="{{$servicos->valTotalServico}}" >
+                <input type="text" class="form-control" id="valTotalServico" name="valTotalServico" value="{{$servicos->valTotalServico}}">
             </div>
         </div>
 
@@ -77,22 +77,22 @@
 
             <div class="col-md-3">
                 <label class="form-label">Material:</label>
-                <input type="text" class="form-control" id="material" name="material" value="{{$servicos->material}}"  >
+                <input type="text" class="form-control" id="material" name="material" value="{{$servicos->material}}">
             </div>
 
             <div class="col-md-3">
                 <label class="form-label">Quantidade do Material:</label>
-                <input type="number" class="form-control" id="qtdMaterial" name="qtdMaterial" value="{{$servicos->qtdMaterial}}"  >
+                <input type="number" class="form-control" id="qtdMaterial" name="qtdMaterial" value="{{$servicos->qtdMaterial}}">
             </div>
 
             <div class="col-md-3">
                 <label class="form-label">Valor Unitario:</label>
-                <input type="text" class="form-control" id="valUnitarioMaterial" name="valUnitarioMaterial" value="{{$servicos->valUnitarioMaterial}}" >
+                <input type="text" class="form-control" id="valUnitarioMaterial" name="valUnitarioMaterial" value="{{$servicos->valUnitarioMaterial}}">
             </div>
 
             <div class="col-md-3">
                 <label class="form-label">Valor Total do Material:</label>
-                <input type="text" class="form-control" id="valTotalMaterial" name="valTotalMaterial" value="{{$servicos->valUnitarioMaterial}}" >
+                <input type="text" class="form-control" id="valTotalMaterial" name="valTotalMaterial" value="{{$servicos->valUnitarioMaterial}}">
             </div>
         </div>
 
@@ -103,7 +103,7 @@
 
             <div class="col-md-3">
                 <label class="form-label">Valor Total de Materiais:</label>
-                <input type="text" class="form-control" id="valTotalTodosMateriais" name="valTotalTodosMateriais" value="{{$servicos->valTotalTodosMateriais}}"  >
+                <input type="text" class="form-control" id="valTotalTodosMateriais" name="valTotalTodosMateriais" value="{{$servicos->valTotalTodosMateriais}}">
             </div>
         </div>
 
@@ -113,26 +113,32 @@
             <h5 class="mb-3 mt-3"> Dados do Financeiros </h5>
             <div class="col-md-3">
                 <label class="form-label">Sinal:</label>
-                <input type="text" class="form-control" id="sinal" name="sinal" value="{{$servicos->sinal}}"  >
+                <input type="text" class="form-control" id="sinal" name="sinal" value="{{$servicos->sinal}}">
             </div>
 
             <div class="col-md-3">
                 <label class="form-label">Restante:</label>
-                <input type="text" class="form-control" id="restante" name="restante" value="{{$servicos->restante}}" >
+                <input type="text" class="form-control" id="restante" name="restante" value="{{$servicos->restante}}">
             </div>
 
             <div class="col-md-3">
                 <label class="form-label">Frete:</label>
-                <input type="text" class="form-control" id="frete" name="frete" value="{{$servicos->frete}}" >
+                <input type="text" class="form-control" id="frete" name="frete" value="{{$servicos->frete}}">
             </div>
 
             <div class="col-md-3">
                 <label class="form-label">Total:</label>
-                <input type="text" class="form-control" id="valTotalServicoEMaterial" name="valTotalServicoEMaterial" value="{{$servicos->valTotalServicoEMaterial}}" >
+                <input type="text" class="form-control" id="valTotalServicoEMaterial" name="valTotalServicoEMaterial" value="{{$servicos->valTotalServicoEMaterial}}">
             </div>
         </div>
-        <button type="submit">Salvar</button>
-
+        <div class="my-2 row">
+            <div class="col-md-3"> </div>
+            <div class="col-md-3"> </div>
+            <div class="col-md-3"> </div>
+            <div class="col-md-3 row">
+                <button class="float-right btn btn-primary" type=" submit">Salvar</button>
+            </div>
+        </div>
     </form>
 
 </div>

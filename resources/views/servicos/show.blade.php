@@ -3,14 +3,14 @@
 @section('title', 'Serviços Show')
 
 @section('content')
-<div class="container my-3 ">
-    <h2>Tabela de Serviços</h2>
+<div class="container  mt-5 ">
+    <h1 class=" font">Tabela de Serviços</h1>
 
     <a class="my-2 btn btn-primary" href="{{ route('createServico') }}"> Novo Serviço </a>
 </div>
 <div class="container mt-3">
 
-    <table class="table table-hover table-striped border border-dark rounded" id="s">
+    <table class="table table-hover table-striped border border-dark rounded" id="dataTable">
         <thead class="bg-dark text-light">
             <tr>
                 <th class="text-center">Cliente:</th>
@@ -38,10 +38,12 @@
             </tr>
 
             @endforeach
+    
 
         </tbody>
     </table>
-    <script src="../../../js/configDataTable.js"></script>
+    <!-- <script src="../../../js/configDataTable.js"></script> -->
+    
 
 </div>
 @endsection

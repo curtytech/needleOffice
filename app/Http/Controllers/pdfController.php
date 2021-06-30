@@ -10,9 +10,9 @@ use Dompdf\Options;
 
 class pdfController extends Controller
 {
-    public function geraPdf()
+    public function geraPdf($id)
     {
-        $servicos = Servicos::all();
+        $servicos = Servicos::findOrFail($id);
         // return view('servicos.pdf', ['servicos' => $servicos]);
 
         $pdf = PDF::loadView('servicos/pdf', compact('servicos'));

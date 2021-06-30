@@ -31,10 +31,17 @@
             margin-right: 200px;
         }
 
+        #conteudo-left {
+            width: 350px;
+            height: auto;
+            float: left;
+        }
 
-
-
-        t {}
+        #conteudo-right {
+            width: 350px;
+            height: auto;
+            float: left;
+        }
     </style>
 </head>
 
@@ -42,44 +49,26 @@
 
     <h1> Nota do Serviço </h1>
 
-
-    @foreach ($servicos as $servico)
-
-
     <h3> Dados do Cliente </h3>
-    <div style="display: inline;">
-        <label>Nome do Cliente: </label>
-        <t>{{ $servico->nomeCliente}}</t>
-        <div class="text-right">
-            <label>Telefone: </label>
-            <t>{{ $servico->telefoneCliente}}</t>
+
+    <div>
+        <div id="conteudo-left">
+            <p> <strong> Nome do Cliente: </strong> {{ $servicos->nomeCliente}}</p>
+            <p> <strong> Data de Pedido: </strong> {{ $servicos->dataPedido}}</p>
+            <hr>
+        </div>
+
+        <div id="conteudo-right">
+            <p> <strong> Telefone: </strong> {{ $servicos->telefoneCliente}}</p>
+            <p> <strong> Data de Entrega: </strong> {{ $servicos->dataEntrega}}</p>
+            <hr>
         </div>
     </div>
+    
+    <br>
     <div class="mt-3  ">
-        <label class="text-right">Nome do Cliente: </label>
-        <t class="text-right">{{ $servico->nomeCliente}}</t>
-        <label style=" text-align: right;">Telefone: </label>
-        <t style=" text-align: right;">{{ $servico->telefoneCliente}}</t>
-        <table>
-            <tr>
-                <th>
-                    <label>Data do Pedido: </label>
-                    <t>{{ $servico->dataPedido}}</t>
-                    <label>Data da Entrega: </label>
-                    <t>{{ $servico->dateEntrega}}</t>
-                </th>
-            </tr>
-        </table>
-    </div>
-    <div class="mt-3">
-
-    </div>
-
-    <hr class="mt-3 ">
-
-    <h3> Dados do Serviços </h3>
-
-    <div class="mt-3  ">
+    
+        <h3> Dados do Serviços </h3>
         <table class="border" style="width: 100%;">
             <tr>
                 <th class="border"><label>Serviço: </label></th>
@@ -88,10 +77,10 @@
                 <th class="border"><label>Valor: </label></th>
             </tr>
             <tr>
-                <th class="border">{{ $servico->servico}} </th>
-                <th class="border">{{ $servico->qtdServico}} </th>
-                <th class="border">{{ $servico->descServico}} </th>
-                <th class="border">{{ $servico->valServico}} </th>
+                <th class="border">{{ $servicos->servico}} </th>
+                <th class="border">{{ $servicos->qtdservico}} </th>
+                <th class="border">{{ $servicos->descServico}} </th>
+                <th class="border">{{ $servicos->valServico}} </th>
             </tr>
         </table>
     </div>
@@ -100,15 +89,10 @@
         <table class="border" style="width: 100%;">
             <tr>
                 <th><label>Total: </label></th>
-                <th class="border">{{ $servico->valTotalServico}}</th>
+                <th class="border">{{ $servicos->valTotalServico}}</th>
             </tr>
         </table>
     </div>
-    <!-- <p>{{ $servico->material}}</p>
-    <p>{{ $servico->qtdMaterial}}</p>
-    <p>{{ $servico->valUnitarioMaterial}}</p>
-    <p>{{ $servico->valTotalMaterial}}</p>
-    <p>{{ $servico->valTotalTodosMateriais}}</p> -->
 
     <hr class="mt-3 ">
 
@@ -123,16 +107,13 @@
                 <th class="border"><label>Valor Total: </label></th>
             </tr>
             <tr>
-                <th class="border">{{ $servico->sinal}}</th>
-                <th class="border">{{ $servico->restante}}</th>
-                <th class="border">{{ $servico->frete}}</th>
-                <th class="border">{{ $servico->valTotalServicoEMaterial}}</th>
+                <th class="border">{{ $servicos->sinal}}</th>
+                <th class="border">{{ $servicos->restante}}</th>
+                <th class="border">{{ $servicos->frete}}</th>
+                <th class="border">{{ $servicos->valTotalServicoEMaterial}}</th>
             </tr>
         </table>
     </div>
-
-
-    @endforeach
 
 </body>
 

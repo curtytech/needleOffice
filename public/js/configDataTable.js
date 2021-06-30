@@ -1,6 +1,6 @@
 
 $(document).ready(function () {
-  $('#s').DataTable({
+  $('#dataTable').DataTable({
     "language": {
       "lengthMenu": "Exibindo _MENU_ registros por página",
       "zeroRecords": "Nada encontrado",

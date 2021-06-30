@@ -2,10 +2,24 @@
 $(document).ready(function () {
     $(".cpf").mask("000.000.000-00")
     $(".cnpj").mask("00.000.000/0000-00")
-    $(".telefone").mask("(00) 0000-0000")
+    $(".telefone").mask("(00) 90000-0000")
     // $(".moeda").mask("R$: 999.999.990,00", {
     //     reverse: true
     // })
+
+    $(".cel").mask("(99) 999999999")
+        .focusout(function (event) {  
+            var target, phone, element;  
+            target = (event.currentTarget) ? event.currentTarget : event.srcElement;  
+            phone = target.value.replace(/\D/g, '');
+            element = $(target);  
+            element.unmask();  
+            if(phone.length > 10) {  
+                element.mask("(99) 99999-9999");  
+            } else {  
+                element.mask("(99) 9999-99999");  
+            }  
+        }); 
     $(".moeda").mask("##0,00", { reverse: true })
 
     $(".cep").mask("00.000-000")

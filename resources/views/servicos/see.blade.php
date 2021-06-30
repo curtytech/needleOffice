@@ -6,9 +6,6 @@
 
 <div class="container">
     <h3 class="mb-3 mt-3">Ver Serviço </h3>
-
-    <form action="{{ route('atualizarServico', ['id' => $servicos->id]) }}" method="post">
-        @csrf
         <div class="row">
             <h5 class="mb-3 mt-3"> Dados do Cliente </h5>
             <div class="col-9">
