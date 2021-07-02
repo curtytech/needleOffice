@@ -9,11 +9,12 @@ class Servicos extends Model
 {
     use HasFactory;
     // protected $fillable = ['isbn', 'nome', 'autor', 'preco'];
+    // fillable = Campos preenchiveis pelo usuario
     protected $fillable = [
         'nomeCliente',
         'telefoneCliente',
-        'dataPedido',
-        'dateEntrega',
+        // 'dataPedido',
+        'dataEntrega',
         'servico',
         'qtdServico',
         'descServico',
@@ -28,5 +29,7 @@ class Servicos extends Model
         'restante',
         'frete',
         'valTotalServicoEMaterial'
+        
     ];
+
 }

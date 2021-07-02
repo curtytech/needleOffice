@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Servicos;
 
+
 class servicosController extends Controller
 {
     public function create()
@@ -12,13 +13,50 @@ class servicosController extends Controller
         return view('servicos.create');
     }
 
+    // public function store(Request $request) {
+
+    //     $event = new Event;
+
+    //     $event->title = $request->title;
+    //     $event->date = $request->date;
+    //     $event->city = $request->city;
+    //     $event->private = $request->private;
+    //     $event->description = $request->description;
+    //     $event->items = $request->items;
+
+    //     // Image Upload
+    //     if($request->hasFile('image') && $request->file('image')->isValid()) {
+
+    //         $requestImage = $request->image;
+
+    //         $extension = $requestImage->extension();
+
+    //         $imageName = md5($requestImage->getClientOriginalName() . strtotime("now")) . "." . $extension;
+
+    //         $requestImage->move(public_path('img/events'), $imageName);
+
+    //         $event->image = $imageName;
+
+    //     }
+
+    //     $user = auth()->user();
+    //     $event->user_id = $user->id;
+
+    //     $event->save();
+
+    //     return redirect('/')->with('msg', 'Evento criado com sucesso!');
+
+    // }
+
     public function store(Request $request)
     {
         Servicos::create([
             'nomeCliente' => $request->nomeCliente,
             'telefoneCliente' => $request->telefoneCliente,
-            'dataPedido' => $request->dataPedido,
-            'dataEntrega' => $request->dataEntrega,
+            // 'dataPedido' => dataAmericana($request->dataPedido),
+            // 'dataEntrega' => dataAmericana($request->dataEntrega),
+            '$dataPedido' => $request->dataPedido,
+            '$dataEntrega' => $request->dataEntrega,
             'servico' => $request->servico,
             'qtdServico' => $request->qtdServico,
             'descServico' => $request->descServico,
@@ -35,7 +73,7 @@ class servicosController extends Controller
             'valTotalServicoEMaterial' => $request->valTotalServicoEMaterial,
 
         ]);
-        return "Serviço salvo com sucesso";
+        return redirect('/servicos/show')->with('msg', 'Serviço salvo com sucesso');
     }
 
     public function show(){
@@ -46,7 +84,8 @@ class servicosController extends Controller
     public function destroy($id){
         $servicos=Servicos::findOrFail($id);
         $servicos->delete();
-        return "Servico Excluido com sucesso";
+        return redirect('/servicos/show')->with('msg', 'Serviço excluido com sucesso');
+
     }
 
     public function see($id){
@@ -81,10 +120,9 @@ class servicosController extends Controller
             'frete' => $request->frete,
             'valTotalServicoEMaterial' => $request->valTotalServicoEMaterial,
         ]);
-        return "Servicos atualizado com sucesso";
+        return redirect('/servicos/show')->with('msg', 'Serviço atualizado com sucesso');
+
     }
 
-    
-
-
+   
 }

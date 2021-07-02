@@ -3,7 +3,7 @@
 @section('title', 'Welcome')
 
 @section('content')
-<div class="container mt-5 ">
+<div class="container mt-4 ">
     <h1 class="mb-3 font">Home</h1>
 </div>
 

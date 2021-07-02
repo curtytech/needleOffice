@@ -17,8 +17,8 @@ class CreateServicosTable extends Migration
             $table->id();
             $table->string('nomeCliente');
             $table->string('telefoneCliente');
-            $table->date('dataPedido');
-            $table->date('dataEntrega');
+            $table->dateTime('dataPedido');
+            $table->dateTime('dataEntrega');
             $table->string('servico');
             $table->integer('qtdServico');
             $table->string('descServico');

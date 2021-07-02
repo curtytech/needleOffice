@@ -27,6 +27,7 @@
 </head>
 
 <body>
+<?php use App\Http\Controllers\Functions; ?>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="/">NeedleOffice</a>
@@ -46,6 +47,18 @@
             </div>
         </div>
     </nav>
+    <main>
+        <div class="container mt-2">
+            <div class="row">
+                @if(session('msg'))
+                <!-- <p class="msg"></p> -->
+                <div class="text-center msg alert alert-primary" role="alert">
+                    {{session('msg')}}
+                </div>
+                @endif
+            </div>
+        </div>
+    </main>
 
     @yield('content')
 
@@ -79,7 +92,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
-    
+
 
 </body>
 

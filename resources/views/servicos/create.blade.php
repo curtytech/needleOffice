@@ -24,12 +24,12 @@
         <div class="row mt-3">
             <div class="col-sm-6 ">
                 <label class="form-label">Data do Pedido</label>
-                <input type="text" class="form-control" id="dataPedido" name="dataPedido" placeholder="" value="">
+                <input type="date" class="form-control" id="dataPedido" name="dataPedido" placeholder="" value="">
             </div>
 
             <div class="col-sm-6">
                 <label class="form-label">Data da Entrega</label>
-                <input type="text" class="form-control" id="dataEntrega" name="dataEntrega" placeholder="" value="">
+                <input type="date" class="form-control" id="dataEntrega" name="dataEntrega" placeholder="" value="">
             </div>
         </div>
 
