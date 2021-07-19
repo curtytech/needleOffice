@@ -18,15 +18,15 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row mt-3">
             <div class="col-sm-6">
                 <label class="form-label">Data do Pedido</label>
-                <input type="text" class="form-control" id="dataPedido" name="dataPedido" placeholder="" value="{{$servicos->dataPedido}}" readonly>
+                <input type="text" class="form-control" id="dataPedido" name="dataPedido" placeholder="" value="{{date('d/m/Y', strtotime($servicos->dataPedido))}}" readonly>
             </div>
 
             <div class="col-sm-6">
                 <label class="form-label">Data da Entrega</label>
-                <input type="text" class="form-control" id="dataEntrega" name="dataEntrega" placeholder="" value="{{$servicos->dataEntrega}}" readonly>
+                <input type="text" class="form-control" id="dataEntrega" name="dataEntrega" placeholder="" value="{{date('d/m/Y', strtotime($servicos->dataEntrega))}}" readonly>
             </div>
         </div>
 
@@ -71,7 +71,7 @@
 
         <div class="row">
             <h5 class="mb-3 mt-3"> Dados dos Materiais </h5>
-
+            
             <div class="col-md-3">
                 <label class="form-label">Material:</label>
                 <input type="text" class="form-control" id="material" name="material" value="{{$servicos->material}}"  readonly>

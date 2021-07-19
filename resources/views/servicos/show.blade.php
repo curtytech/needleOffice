@@ -3,7 +3,6 @@
 @section('title', 'Serviços Show')
 
 @section('content')
-<?php use App\Http\Controllers\Functions; ?>
 
 <div class="container  mt-4 ">
     <h1 class=" font">Tabela de Serviços</h1>
@@ -30,7 +29,6 @@
                 <td class="text-center">{{$servico->telefoneCliente}}</td>
                 <td class="text-center">{{$servico->servico}}</td>
 
-
                 <td class="text-center">{{$servico->valTotalServicoEMaterial}}</td>
 
                 <td class="text-center">
@@ -49,6 +47,5 @@
         </tbody>
     </table>
 
-    
 </div>
 @endsection

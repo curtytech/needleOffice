@@ -27,16 +27,17 @@
     </div>
 </div>
 
-<div class="container">
-    {{ $a = 5 }}
-    {{ $b = 7 }}
 
-    {{  $c = $a + $b }}
 
-    {{ $c }}
-
-    <input name="a" type="number"> 
 
 
 </div>
+
+   
+</section>
+
+</div>
+
+
 @endsection
+

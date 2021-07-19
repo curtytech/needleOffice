@@ -24,12 +24,12 @@
         <div class="row">
             <div class="col-sm-6">
                 <label class="form-label">Data do Pedido</label>
-                <input type="text" class="form-control" id="dataPedido" name="dataPedido" placeholder="" value="{{$servicos->dataPedido}}">
+                <input type="date" class="form-control" id="dataPedido" name="dataPedido" placeholder="" value="{{$servicos->dataPedido}}">
             </div>
 
             <div class="col-sm-6">
                 <label class="form-label">Data da Entrega</label>
-                <input type="text" class="form-control" id="dataEntrega" name="dataEntrega" placeholder="" value="{{$servicos->dataEntrega}}">
+                <input type="date" class="form-control" id="dataEntrega" name="dataEntrega" placeholder="" value="{{$servicos->dataEntrega}}">
             </div>
         </div>
 
@@ -55,7 +55,11 @@
 
             <div class="col-md-3">
                 <label class="form-label">Valor Total:</label>
-                <input type="text" class="form-control" id="valServico" name="valServico" value="{{$servicos->valServico}}">
+
+                <div class="input-group col-3">
+                    <span class="input-group-text" id="basic-addon1">R$:</span>
+                    <input type="text" class="form-control" id="valServico" name="valServico" value="{{$servicos->valServico}}">
+                </div>
             </div>
         </div>
 
@@ -66,7 +70,11 @@
 
             <div class="col-md-3">
                 <label class="form-label">Valor Total de Serviços:</label>
-                <input type="text" class="form-control" id="valTotalServico" name="valTotalServico" value="{{$servicos->valTotalServico}}">
+
+                <div class="input-group col-3">
+                    <span class="input-group-text" id="basic-addon1">R$:</span>
+                    <input type="text" class="form-control" id="valTotalServico" name="valTotalServico" value="{{$servicos->valTotalServico}}">
+                </div>
             </div>
         </div>
 
@@ -87,12 +95,20 @@
 
             <div class="col-md-3">
                 <label class="form-label">Valor Unitario:</label>
-                <input type="text" class="form-control" id="valUnitarioMaterial" name="valUnitarioMaterial" value="{{$servicos->valUnitarioMaterial}}">
+
+                <div class="input-group col-3">
+                    <span class="input-group-text" id="basic-addon1">R$:</span>
+                    <input type="text" class="form-control" id="valUnitarioMaterial" name="valUnitarioMaterial" value="{{$servicos->valUnitarioMaterial}}">
+                </div>
             </div>
 
             <div class="col-md-3">
                 <label class="form-label">Valor Total do Material:</label>
-                <input type="text" class="form-control" id="valTotalMaterial" name="valTotalMaterial" value="{{$servicos->valUnitarioMaterial}}">
+
+                <div class="input-group col-3">
+                    <span class="input-group-text" id="basic-addon1">R$:</span>
+                    <input type="text" class="form-control" id="valTotalMaterial" name="valTotalMaterial" value="{{$servicos->valUnitarioMaterial}}">
+                </div>
             </div>
         </div>
 
@@ -103,7 +119,11 @@
 
             <div class="col-md-3">
                 <label class="form-label">Valor Total de Materiais:</label>
-                <input type="text" class="form-control" id="valTotalTodosMateriais" name="valTotalTodosMateriais" value="{{$servicos->valTotalTodosMateriais}}">
+
+                <div class="input-group col-3">
+                    <span class="input-group-text" id="basic-addon1">R$:</span>
+                    <input type="text" class="form-control" id="valTotalTodosMateriais" name="valTotalTodosMateriais" value="{{$servicos->valTotalTodosMateriais}}">
+                </div>
             </div>
         </div>
 
@@ -113,22 +133,35 @@
             <h5 class="mb-3 mt-3"> Dados do Financeiros </h5>
             <div class="col-md-3">
                 <label class="form-label">Sinal:</label>
-                <input type="text" class="form-control" id="sinal" name="sinal" value="{{$servicos->sinal}}">
+
+                <div class="input-group col-3">
+                    <span class="input-group-text" id="basic-addon1">R$:</span>
+                    <input type="text" class="form-control" id="sinal" name="sinal" value="{{$servicos->sinal}}">
+                </div>
             </div>
 
             <div class="col-md-3">
                 <label class="form-label">Restante:</label>
-                <input type="text" class="form-control" id="restante" name="restante" value="{{$servicos->restante}}">
+                <div class="input-group col-3">
+                    <span class="input-group-text" id="basic-addon1">R$:</span>
+                    <input type="text" class="form-control" id="restante" name="restante" value="{{$servicos->restante}}">
+                </div>
             </div>
 
             <div class="col-md-3">
                 <label class="form-label">Frete:</label>
-                <input type="text" class="form-control" id="frete" name="frete" value="{{$servicos->frete}}">
+                <div class="input-group col-3">
+                    <span class="input-group-text" id="basic-addon1">R$:</span>
+                    <input type="text" class="form-control" id="frete" name="frete" value="{{$servicos->frete}}">
+                </div>
             </div>
 
             <div class="col-md-3">
                 <label class="form-label">Total:</label>
-                <input type="text" class="form-control" id="valTotalServicoEMaterial" name="valTotalServicoEMaterial" value="{{$servicos->valTotalServicoEMaterial}}">
+                <div class="input-group col-3">
+                    <span class="input-group-text" id="basic-addon1">R$:</span>
+                    <input type="text" class="form-control" id="valTotalServicoEMaterial" name="valTotalServicoEMaterial" value="{{$servicos->valTotalServicoEMaterial}}">
+                </div>
             </div>
         </div>
         <div class="my-2 row">

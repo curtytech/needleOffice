@@ -80,6 +80,9 @@
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 
+    <!-- Functions -->
+    <script src="{{asset('js/functions.js')}}"> </script>
+
     <!-- Data Tables -->
     <script src="//cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
     <script src="{{asset('js/configDataTable.js')}}"> </script>
