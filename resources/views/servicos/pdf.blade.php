@@ -77,11 +77,12 @@
                 <th class="border"><label>Valor: </label></th>
             </tr>
             <tr>
-                <th class="border">{{ $servicos->servico}} </th>
-                <th class="border">{{ $servicos->qtdservico}} </th>
-                <th class="border">{{ $servicos->descServico}} </th>
-                <th class="border">{{ $servicos->valServico}} </th>
+                <th class="border">{{ $servicos->servico[0]}} </th>
+                <th class="border">{{ $servicos->qtdServico[0]}} </th>
+                <th class="border">{{ $servicos->descServico[0]}} </th>
+                <th class="border">{{ $servicos->valServico[0]}} </th>
             </tr>
+            
         </table>
     </div>
 

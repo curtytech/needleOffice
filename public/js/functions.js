@@ -18,21 +18,21 @@ $(document).ready(function () {
             .attr("id", 'dadosDoServico' + counter);
 
         newServico.after().html('<div class="row mt-2"> <div class="col-md-3">  <label>Serviço ' + counter + ': </label>' +
-            '<input class="form-control" type="text" name="servico' + counter +
+            '<input class="form-control" type="text" name="servico[]' +
             '" id="servico' + counter + '" value="" > </div>' +
 
             '<div class="col-md-3">  <label> Descrição do Serviço ' + counter + ': </label>' +
-            '<input class="form-control" type="text" name="servico' + counter +
+            '<input class="form-control" type="text" name="descServico[]' +
             '" id="servico' + counter + '" value="" > </div>' +
 
             '<div class="col-md-3">  <label> Quantidade do Serviço ' + counter + ': </label>' +
-            '<input class="form-control" type="number" name="servico' + counter +
+            '<input class="form-control" type="number" name="qtdServico[]' +
             '" id="servico' + counter + '" value="" > </div>' +
 
             '<div class="col-md-3">  <label> Valor do Serviço ' + counter + ': </label>' +
             '<div class="input-group col-3"> ' +
             ' <span class="input-group-text" id="basic-addon1">R$:</span> ' +
-            '<input class="moeda form-control" type="text" name="servico' + counter +
+            '<input class="moeda form-control" type="text" name="valServico[]' +
             '" id="servico' + counter + '" value="" > </div>' +
 
             '</div> </div>'

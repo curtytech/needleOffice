@@ -40,34 +40,27 @@
 
             <div class="col-md-3">
                 <label class="form-label">Serviço:</label>
-                <input type="text" class="form-control" id="servico" name="servico" placeholder="">
+                <input type="text" class="form-control" id="servico" name="servico[]" placeholder="">
             </div>
 
             <div class="col-md-3">
                 <label class="form-label">Descrição do Serviço:</label>
-                <input type="text" class="form-control" id="descServico" name="descServico" placeholder="">
+                <input type="text" class="form-control" id="descServico" name="descServico[]" placeholder="">
             </div>
 
             <div class="col-md-3">
                 <label class="form-label">Quantidade do Serviço:</label>
-                <input type="number" class="form-control" id="qtdServico" name="qtdServico" placeholder="">
+                <input type="number" class="form-control" id="qtdServico" name="qtdServico[]" placeholder="">
             </div>
 
             <div class="col-md-3">
                 <label class="form-label">Valor do Serviço:</label>
                 <div class="input-group col-3">
                     <span class="input-group-text" id="basic-addon1">R$:</span>
-                    <input type="text" class="moeda form-control" id="valServico" name="valServico" placeholder="">
+                    <input type="text" class="moeda form-control" id="valServico" name="valServico[]" placeholder="">
                 </div>
             </div>
         </div>
-
-        <!-- <div class="row mt-4">
-            <div class="col-4"> </div>
-            <div class="col-4 d-grid gap-2"> <input type="button" id="addServico" class=" btn btn-primary btn-sm" value="Adicionar mais serviços " > </div>
-            <div class="col-4 d-grid gap-2"> <input type="button" id="removeServico" class=" btn btn-primary btn-sm" value="Remover serviços " > </div>
-
-        </div> -->
 
         <div class="row  mt-3">
             <div class="col-6 d-grid gap-2">
@@ -95,12 +88,12 @@
 
             <div class="col-md-3">
                 <label class="form-label">Material:</label>
-                <input type="text" class="form-control" id="material" name="material" placeholder="">
+                <input type="text" class="form-control" id="material" name="material[]" placeholder="">
             </div>
 
             <div class="col-md-3">
                 <label class="form-label">Quantidade do Material:</label>
-                <input type="number" class="form-control" id="qtdMaterial" name="qtdMaterial" placeholder="">
+                <input type="number" class="form-control" id="qtdMaterial" name="qtdMaterial[]" placeholder="">
             </div>
 
             <div class="col-md-3">
@@ -108,7 +101,7 @@
 
                 <div class="input-group col-3">
                     <span class="input-group-text" id="basic-addon1">R$:</span>
-                    <input type="text" class="moeda form-control" id="valUnitarioMaterial" name="valUnitarioMaterial" placeholder="">
+                    <input type="text" class="moeda form-control" id="valUnitarioMaterial" name="valUnitarioMaterial[]" placeholder="">
                 </div>
             </div>
 
@@ -117,7 +110,7 @@
 
                 <div class="input-group col-3">
                     <span class="input-group-text" id="basic-addon1">R$:</span>
-                    <input type="text" class="moeda form-control" id="valTotalMaterial" name="valTotalMaterial" placeholder="">
+                    <input type="text" class="moeda form-control" id="valTotalMaterial" name="valTotalMaterial[]" placeholder="">
                 </div>
             </div>
         </div>

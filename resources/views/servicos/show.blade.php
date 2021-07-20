@@ -16,7 +16,7 @@
             <tr>
                 <th class="text-center">Cliente:</th>
                 <th class="disableMobile text-center">Telefone:</th>
-                <th class="text-center">Serviço:</th>
+                <th class="text-center">Primeiro Serviço:</th>
                 <th class="disableMobile text-center">Total:</th>
                 <th class="text-center">Ações:</th>
             </tr>
@@ -27,8 +27,7 @@
             <tr>
                 <td class="text-center">{{$servico->nomeCliente}}</td>
                 <td class="text-center">{{$servico->telefoneCliente}}</td>
-                <td class="text-center">{{$servico->servico}}</td>
-
+                <td class="text-center">{{$servico->servico[0]}}</td>
                 <td class="text-center">{{$servico->valTotalServicoEMaterial}}</td>
 
                 <td class="text-center">
@@ -39,6 +38,7 @@
                     <a class="btn btn-danger" href="{{ route('excluirServico', ['id'=>$servico->id])}}"><i class="fas fa-trash"></i></a>
                 </td>
             </tr>
+            
             @endforeach
             @if(count($servicos) == 0)
                 <p>Não a serviços na lista!</p>

@@ -11,27 +11,37 @@ class Servicos extends Model
     // protected $fillable = ['isbn', 'nome', 'autor', 'preco'];
     // fillable = Campos preenchiveis pelo usuario
 
-    
-    protected $fillable = [
-        'nomeCliente',
-        'telefoneCliente',
-        'dataPedido',
-        'dataEntrega',
-        'servico',
-        'qtdServico',
-        'descServico',
-        'valServico',
-        'valTotalServico',
-        'material',
-        'qtdMaterial',
-        'valUnitarioMaterial',
-        'valTotalMaterial',
-        'valTotalTodosMateriais',
-        'sinal',
-        'restante',
-        'frete',
-        'valTotalServicoEMaterial'
-        
+    protected $casts = [ 
+        'servico' => 'array',
+        'qtdServico' => 'array',
+        'descServico' => 'array',
+        'valServico' => 'array',
+        'material' => 'array',
+        'qtdMaterial' => 'array',
+        'valUnitarioMaterial' => 'array',
+        'valTotalMaterial' => 'array'
+       
     ];
+    // protected $fillable = [
+    //     'nomeCliente',
+    //     'telefoneCliente',
+    //     'dataPedido',
+    //     'dataEntrega',
+    //     'servico',
+    //     'qtdServico',
+    //     'descServico',
+    //     'valServico',
+    //     'valTotalServico',
+    //     'material',
+    //     'qtdMaterial',
+    //     'valUnitarioMaterial',
+    //     'valTotalMaterial',
+    //     'valTotalTodosMateriais',
+    //     'sinal',
+    //     'restante',
+    //     'frete',
+    //     'valTotalServicoEMaterial'
+        
+    // ];
 
 }
