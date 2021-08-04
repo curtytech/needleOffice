@@ -1,0 +1,38 @@
+upar
+
+git  init 
+
+//. para upar tudo
+git add .
+       
+//Fazer o comit e colocar o nome
+git commit -m ""        
+
+//add no repositorio curtytech
+git remote add origin https://github.com/curtytech/needleOffice.git 
+
+//push para upar
+git push -u origin master
+
+
+//Branches
+// Saber qual branch esta
+git branch 
+
+// Add nova branch
+git branch nomedabranch
+
+//Mudar de Branch
+git checkout branch
+
+
+
+
+
+-- Iniciar o Projeto
+
+Add e Configurar Arquivo .env
+Atualizar Dependencias -> composer update 
+Fazer Migrations -> php artisan migrate 
+Instalar Livewire e 
+
