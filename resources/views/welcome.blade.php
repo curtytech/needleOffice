@@ -4,12 +4,12 @@
 
 @section('content')
 <div class="container mt-4 ">
-    <h1 class="mb-3 font">Home</h1>
+    <h1 class="mb-3 font">Dashboard</h1>
 </div>
 
 <!-- <div class="form-row"> Copia do Siseduc
     <div class="form-group col-md-4">
-        <span class="btn btn-outline-secondary btn-lg btn-block editrow" data-id="" data-inscricao="" title="SISEDUC" data-href="http://siseducmage.com.br/siseduc/Home"><i class="fa fa-graduation-cap fa-5x"></i><br>SISEDUC</span>
+        <span class="btn btn-outline-secondary btn-lg btn-block editrow" data-id="" data-inscricao="" title="SISEDUC" data-href="http://siseducmage.com.br/siseduc/Dashboard"><i class="fa fa-graduation-cap fa-5x"></i><br>SISEDUC</span>
     </div>
     <div class="form-group col-md-4">
         <span class="btn btn-outline-secondary btn-lg btn-block editrow" data-id="" data-inscricao="" title="GED" data-href="http://siseducmage.com.br/siseduc/Ged_home"><i class="fa fa-inbox fa-5x"></i><br>GED</span>

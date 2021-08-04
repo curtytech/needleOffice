@@ -34,5 +34,8 @@ git checkout branch
 Add e Configurar Arquivo .env
 Atualizar Dependencias -> composer update 
 Fazer Migrations -> php artisan migrate 
-Instalar Livewire e 
-
+Baixar e Jetstream -> composer require laravel/jetstream 
+Instalar Livewire e Jetstream -> php artisan jetstream:install livewire
+Instalar NPM e NPM Run Dev -> npm install 
+Instalar NPM Run Dev -> npm run dev
+Fazer Migrations -> php artisan migrate

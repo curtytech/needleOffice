@@ -24,10 +24,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wgt@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-       <!-- Jquery -->
-       <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
- 
- 
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+
 </head>
 
 <body>
@@ -45,8 +45,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/servicos/show">Serviços</a>
                     </li>
-
+                    <div class="float-right">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/logout">Logout</a>
+                        </li>
+                    </div>
                 </ul>
+
             </div>
         </div>
     </nav>

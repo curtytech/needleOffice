@@ -25,13 +25,17 @@ Route::get('/', function () {
 //     return view('servicos.create');
 // });
 
-Route::get('/servicos/create', 'servicosController@create')->name('createServico');   
+Route::get('/servicos/create', 'servicosController@create')->name('createServico')->middleware('auth');   
 Route::post('/servicos/create', 'servicosController@store')->name('salvarServico');   
-Route::get('/servicos/show', 'servicosController@show');
-Route::get('/servicos/see/{id}', 'servicosController@see')->name('verServico');
-Route::get('/servicos/edit/{id}', 'servicosController@edit')->name('editarServico');
+Route::get('/servicos/show', 'servicosController@show')->middleware('auth');
+Route::get('/servicos/see/{id}', 'servicosController@see')->name('verServico')->middleware('auth');
+Route::get('/servicos/edit/{id}', 'servicosController@edit')->name('editarServico')->middleware('auth');
 Route::post('/servicos/update/{id}', 'servicosController@update')->name('atualizarServico');
-Route::get('/servicos/del/{id}', 'servicosController@destroy')->name('excluirServico');
+Route::get('/servicos/del/{id}', 'servicosController@destroy')->name('excluirServico')->middleware('auth');
 
-Route::get('/servicos/pdf/{id}', 'pdfController@geraPdf')->name('pdfServico');
+Route::get('/servicos/pdf/{id}', 'pdfController@geraPdf')->name('pdfServico')->middleware('auth');
 
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
