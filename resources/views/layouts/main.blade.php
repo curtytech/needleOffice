@@ -50,7 +50,7 @@
                     <li class="nav-item">
                     </li>
                     <li class="nav-item">
-                        <form method="POST" action="http://127.0.0.1:8000/logout">
+                        <form method="POST" action="/logout">
                             @csrf
                             <a class="nav-link text-right" href="/logout" onclick="event.preventDefault();
                                 this.closest('form').submit();">Log Out</a>
