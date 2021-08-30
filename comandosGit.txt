@@ -42,4 +42,5 @@ Fazer Migrations -> php artisan migrate
 Desabilitar Register sem Logar -> Para desabilitar o registro, vá para config/fortify.php e comente o recurso Features :: registration ().
 // Features::registration(),
 
-
+// Instalar Laravel
+composer create-project --prefer-dist laravel/laravel nomeDoProjeto
