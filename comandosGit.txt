@@ -8,14 +8,17 @@ git add .
 //Fazer o comit e colocar o nome
 git commit -m ""        
 
-//add no repositorio curtytech
+//add no repositorio curtytech  //-> O comando origin se refere a origem do repositorio no caso 'https://github.com/curtytech/needleOffice.git '
 git remote add origin https://github.com/curtytech/needleOffice.git 
+
+//Checar repositorio
+git remote -v
 
 //push para upar
 git push -u origin master
 
 
-//Branches
+//Checar Branches
 // Saber qual branch esta
 git branch 
 
